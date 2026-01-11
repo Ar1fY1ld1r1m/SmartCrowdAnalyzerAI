@@ -65,8 +65,8 @@ Although the predictions were still rough, this version introduced the idea that
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
-## ***2.4 v4: Complete end-to-end system (final version)*** ##
-The final version integrates all previous components into a single, structured pipeline.
+## ***2.4 v4: Complete end-to-end system (sub-final version)*** ##
+This sub-final version integrates all previous components into a single, structured pipeline.
 
 This version includes:
 - Live stream processing with YOLOv8 instance segmentation
@@ -77,6 +77,40 @@ This version includes:
 - Automatic saving of datasets and visual reports
 
 Version 4 represents a full transition from computer vision output to data-driven insight, making the system suitable for analysis, reporting, and future extension.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+## ***2.5 v5: Video-based forecasting with advanced time-series modeling*** ##
+Version 5 focused on improving the forecasting quality and system robustness by switching from simple regression to a dedicated time-series forecasting model.
+
+Key changes introduced in v5:
+- Processing full video files instead of live streams
+- Frame sampling to reduce computational cost
+- Instance segmentation–based blurring of complete individuals
+- Use of Facebook Prophet for time-series forecasting
+- Forecasting crowdedness up to 6 hours ahead
+- Automatic generation of processed video output
+-Improved visual reporting of forecasts
+
+This version represents the transition from basic trend estimation to statistically grounded time-series forecasting, making predictions more stable and realistic over longer horizons.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+## ***2.6 v6: Frame-based large-scale analysis and refined forecasting (final version)*** ##
+Version 6 is the most refined and structured version of the system.
+Instead of processing live streams or videos directly, the system operates on pre-extracted image frames.
+This allows full control over temporal resolution, reproducibility, and large-scale analysis.
+
+Major improvements in v6 include:
+- Processing thousands of individual frames as a dataset
+- Confidence-based person detection
+- Fully structured minute-level aggregation
+- Custom seasonal patterns in Prophet
+- Long-horizon forecasting with confidence intervals
+- Clear separation between observed data and predictions
+- Publication-ready visualizations
+
+This version shifts the system from a real-time tool to a data-centric analytical pipeline, suitable for research, reporting, and further optimization.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
